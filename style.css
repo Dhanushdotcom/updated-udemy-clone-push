@@ -89,7 +89,16 @@ body{
     padding: 10px;
     margin: 10px;
     border-radius: 30px;
+     border: solid 1px blueviolet;
+     cursor: pointer;
     
+}
+/* categories animation */
+.categories p:hover{
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    border: solid 1px blueviolet;
 }
 /* sale img */
 .sale_img img{
@@ -107,6 +116,21 @@ body{
     left: 8%;
     background-color: rgb(24, 149, 154);
     border-radius: 20px;
+    animation-name:zoom ;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+/* key frames animation */
+@keyframes zoom {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+     100%{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 .sale_img__offer2{
     width:400px;
@@ -117,6 +141,10 @@ body{
     left: 8%;
     background-color: rgb(0, 155, 134);
     border-radius: 20px;
+     animation-name:zoom ;
+    animation-duration: 2s;
+    opacity: 0;
+      animation-fill-mode: forwards;
 }
 .sale_img__offer1 h2,.sale_img__offer2 h2{
     margin-bottom: 10px;
@@ -136,7 +164,7 @@ body{
 }
 .recommended__container-1{
     width: 300px;
-    border: solid black 2px;
+   
     padding: 5px;
     margin: 5px;
     background-color: lightgrey;
@@ -146,7 +174,7 @@ body{
 /* recommended container images */
 .recommended__container-1 img{
     width:100%;
-    height: 50%;
+    height: 60%;
     margin-bottom: 20px;
 }
 /* topics  */
